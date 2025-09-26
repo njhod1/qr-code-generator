@@ -21,11 +21,11 @@ export const platformIcon = (platform: Platform): string => {
   }
 }
 
-export const platformTemplates: Record<Platform, string> = {
-  PayPal: 'https://paypal.me/',
-  UPI: 'upi://pay?pa=',
-  Stripe: 'https://buy.stripe.com/',
-  Crypto: 'bitcoin:',
-  SEPA: 'sepa://pay?iban=',
+export const platformTemplates: Record<string, string> = {
+  PayPal: 'https://paypal.me/yourname',
+  UPI: 'upi://pay?pa=your@upiid&pn=Your Name',
+  Stripe: 'https://buy.stripe.com/test_123456',
+  Crypto: 'bitcoin:youraddress',
+  SEPA: 'sepa://iban=DE89370400440532013000&name=Your Name&amount=25.00',
   Generic: '',
 }
